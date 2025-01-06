@@ -1,0 +1,32 @@
+/* This is the 2nd day of my c++ revision
+program for masters thesis */
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout << "Hi How are you !\n"; 
+
+	/*this will print out the comment "Hi How are you" and 
+	new line started using \n inside inverted comma.*/
+
+	cout << "This is the day 2 !\n"; //this will be second comment.
+
+
+	//decleartion of integer.
+	int a = 12;  //initialization óf variable
+	int	b(23); //initialization of variable
+	int	c{ 30 }; //initialization of variable
+	int result; //initialization if variable (undetermined)
+	
+	//process
+	c = a + 2;
+	result = a + b + c;
+
+
+	//print out the result
+	cout << result;
+
+	//termination of program.
+	return 0;
+}
