@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	/* list of common variable typer:: alignas, alignof, and, and_eq, asm, auto, bitand, bitor, bool, break,
+case, catch, char, char16_t, char32_t, class, compl, const, constexpr, const_cast, continue, decltype, default, delete, do,
+double, dynamic_cast, else, enum, explicit, export, extern, false, float, for, friend, goto, if, inline, int, long, mutable, 
+namespace, new, noexcept, not, not_eq, nullptr, operator, or, or_eq, private, protected, public, register, reinterpret_cast, return,
+short, signed, sizeof, static, static_assert, static_cast, struct, switch, template, this, thread_local, throw, true, try, typedef, typeid, 
+typename, union, unsigned, using, virtual, void, volatile, wchar_t, while, xor, xor_eq */
+	
+	// decleartion of variable;
+	int num1, num2;
+	double result;
+	char choice;
+
+	// Input from the user;
+	cout << "Enter the first number please: ";
+	cin >> num1;
+	cout << "Enter the second number please: ";
+	cin >> num2;
+
+	//Arithmetic operators
+	cout << "Arithmetic Operations :" << endl;
+	cout << num1 << "+" << num2 << "=" << (num1 + num2) << '/n';
+	cout << (num1 + num2) << '/n';
+
+	if (num2 != 0)
+	{
+		cout << (double(num1) / num2) << '/n';
+		cout << (num1 % num2) << '/n';
+	}
+	else
+	{
+		cout << "Division and modulo by zero are not allowed. " << '\n';
+	}
+
+	// Logical operators
+	cout << "\nLogical Operations:" << endl;
+	cout << "(num1 > 0 && num2 > 0): " << ((num1 > 0 && num2 > 0) ? "true" : "false") << '\n';
+	cout << "(num1 > 0 || num2 > 0): " << ((num1 > 0 || num2 > 0) ? "true" : "false") << '\n';
+	cout << "!(num1 > num2): " << (!(num1 > num2) ? "true" : "false") << '\n';
+
+	// Assignment operators
+	cout << "\nDemonstration of Assignment Operators:" << endl;
+	result = num1;
+	result += num2; // result = result + num2
+	cout << "After result += num2: " << result << '\n';
+	result *= 2; // result = result * 2
+	cout << "After result *= 2: " << result << '\n';
+
+	// Final output
+	cout << "\nDo you want to repeat the program? (y/n): ";
+	cin >> choice;
+	if (choice == 'y' || choice == 'Y') {
+		cout << "Restart the program manually.\n";
+	}
+	else {
+		cout << "Program ended.\n";
+	}
+
+	return 0;
+}
