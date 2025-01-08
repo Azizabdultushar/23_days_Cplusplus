@@ -1,0 +1,76 @@
+#include<iostream>
+using namespace std;
+
+
+//create structure.
+struct Smartphone {
+	string name;
+	int storageSpace;
+	string color;
+	float price;
+};
+
+struct Person {
+	string name;
+	int age;
+	Smartphone smartphone;
+};
+
+
+void printSmartphoneInfo(Smartphone smartphone) {
+	cout << "name: " << smartphone.name << endl;
+	cout << "color: " << smartphone.color << endl;
+	cout << "Price: " << smartphone.price << endl;
+	cout << "storage Space: " << smartphone.storageSpace << "GB" << endl;
+}
+
+void printPersonInfo(Person person) {
+	cout << "name" << person.name << endl;
+	cout << "age" << person.age << endl;
+	printSmartphoneInfo(person.smartphone);
+}
+
+
+int main()
+{
+	/*string name = "iphone 14 pro";
+	int storageSpace = 128;
+	string color = "darkPurple";
+	float price = 1299.99;
+
+	string name2 = "Samsung Galaxy S25 ultra";
+	int storageSpace2 = 128;
+	string color2 = "gray";
+	float price2 = 1099.88;
+	*/
+
+	Smartphone smartphone;
+	smartphone.name = "iphone14pro";
+	smartphone.color = "purple";
+	smartphone.price = 999.99;
+	smartphone.storageSpace = 128;
+
+	Smartphone smartphone2;
+	smartphone2.name = "samsung galaxy";
+	smartphone2.color = "gray";
+	smartphone2.price = 999.34;
+	smartphone2.storageSpace = 128;
+
+	/*
+	cout << "name: " << smartphone.name << endl;
+	cout << "color: " << smartphone.color << endl;
+	cout << "Price: " << smartphone.price << endl;
+	cout << "storage Space: " << smartphone.storageSpace <<"GB" << endl;
+	*/
+
+	printSmartphoneInfo(smartphone);
+	printSmartphoneInfo(smartphone2);
+
+	Person p;
+	p.age = 26;
+	p.name = "nanananu";
+	p.smartphone = smartphone2;
+	printPersonInfo(p);
+
+	system("pause>0");
+} 
