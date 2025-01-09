@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int foo[] = { 12,23,21,23,45 }; //array declearation & if there is no value in [] compiler will assume the value according to size of array.
+int n, result = 0;
+
+
+int main()
+{
+	for (n = 0;n < 5;++n) 
+	{
+		result += foo[n];
+	}
+	cout << result;
+	return 0;
+}
