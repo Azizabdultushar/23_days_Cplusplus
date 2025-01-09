@@ -5,4 +5,5 @@ Welcome to my self leaning c++ note book. Here I am gonna note down everything I
 ## Day 2: Basic Maths!
 ## Day 3: Variable types, In/out & Operators.
 ## Day 4: Stucture:statement & functions.
-
+## Day 5: Array
+## Day 6: Compound data type and data structure.
