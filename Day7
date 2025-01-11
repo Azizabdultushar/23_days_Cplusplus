@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int luckNumbers[5]; // = { 12,23,31,23,12};
+
+		for (int i = 0;i <= 4;i++)
+		{
+			cout << "Number: ";
+			cin >> luckNumbers[i];
+		}
+
+		for (int i = 0;i <= 4;i++)
+		{
+			cout << &luckNumbers[i];
+		}
+
+
+	/*
+	cout << luckNumbers[2] << endl;
+	cout << &luckNumbers[2] << endl;
+	cout << luckNumbers << endl;
+	*/
+
+	system("pause>0");
+	return 0;
+}
