@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	//total,average, in Two Years.
+	/*
+	float month1 = 100;
+	float month2 = 120;
+	float month3 = 300;
+	float month4 = 100;
+	float month5 = 120;
+	float month6 = 300;
+	*/
+	float monthsArray[12]; //={100,220,233,232,123,121};
+	float total = 0;
+	/*
+	cout << "Enter the amount: ";
+	cin >> monthsArray[0];
+	cin >> monthsArray[1];
+	cin >> monthsArray[2];
+	cin >> monthsArray[3];
+	cin >> monthsArray[4];
+	cin >> monthsArray[5];
+	*/
+
+	for (int i = 0;i <= 11;i++)
+	{
+		cout << "enter amount for month " << i+1 << ": ";
+		cin >> monthsArray[i];
+		total += monthsArray[i];
+	}
+
+	/*
+	float total = monthsArray[0] + monthsArray[1] + monthsArray[2];
+	*/
+
+
+	float average = total / 12;
+	float inTWoYears = average * 24;
+
+
+	cout << "total = " << total << endl;
+	cout << "average = " << average << endl;
+	cout << "inTwoYears= " << inTWoYears << endl;
+
+	system("pause>0");
+}
