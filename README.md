@@ -8,3 +8,4 @@ Welcome to my self leaning c++ note book. Here I am gonna note down everything I
 ## Day 5: Array
 ## Day 6: Compound data type and data structure.
 ## Day 7: Pointer
+## Day 8: Data structure
