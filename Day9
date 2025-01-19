@@ -31,3 +31,42 @@ int main()
 
 	system("pause>0");
 }
+
+
+
+###########################
+
+practice:
+
+
+
+#include<iostream>
+#include<list>
+using namespace std;
+
+class autimobile {
+public:
+	list <string> BrandName;
+	string model;
+	int Manufacturing_year;
+	int price;
+};
+
+
+int main()
+{
+	autimobile Car;
+
+	Car.Manufacturing_year = 2023;
+	Car.price = 18500;
+	Car.model = "Hybrid";
+	Car.BrandName = { "VW", "BMW", "Mercedes", "Porches", "Audi" };
+
+	cout << "Car Model : " << Car.model << endl;
+	for (string BrandName : Car.BrandName) {
+		cout << BrandName << endl;
+	}
+
+	system("pause>0");
+}
+
